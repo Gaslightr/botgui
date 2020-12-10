@@ -176,7 +176,16 @@ function botgui:create_checkbox(parent, name, state)
 		gui.box.AnchorPoint = Vector2.new(0.5, 0.5)
 		gui.box.Position = UDim2.new(0.05, 0, 0.5, 0)
 		gui.box.BorderSizePixel = 0
-		gui.box.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+		
+		if state then
+			
+			gui.box.BackgroundColor3 = Color3.fromRGB(148, 52, 189)
+			
+		else
+			
+			gui.box.BackgroundColor3 = Color3.fromRGB(58, 58, 58)
+			
+		end
 		
 		gui.text = Instance.new("TextLabel", gui.bg)
 		gui.text.Size = UDim2.new(0.8, 0, 1, 0)
