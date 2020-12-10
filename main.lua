@@ -2,7 +2,7 @@ local botgui = {}
 local uis = game:GetService("UserInputService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 
-botgui.toggle_key = Enum.KeyCode.F10
+botgui.toggle_key = Enum.KeyCode.F7
 botgui.toggle_win = nil
 
 uis.InputBegan:Connect(function(_)
