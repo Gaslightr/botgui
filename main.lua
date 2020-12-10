@@ -2,6 +2,19 @@ local botgui = {}
 local uis = game:GetService("UserInputService")
 local mouse = game.Players.LocalPlayer:GetMouse()
 
+botgui.toggle_key = Enum.KeyCode.F10
+botgui.toggle_win = nil
+
+uis.InputBegan:Connect(function(_)
+	
+	if _.KeyCode == botgui.toggle_key and botgui.toggle_win ~= nil then
+		
+		botgui.toggle_win.Visible = not botgui.toggle_win.Visible
+		
+	end
+	
+end)
+
 function botgui:create_gui_object(parent)
 	
 	if parent:IsA("Instance") then
