@@ -37,7 +37,7 @@ function botgui:create_window(parent, title)
 		gui.title_text = Instance.new("TextLabel", gui.title_bar)
 		gui.title_text.Size = UDim2.new(0.1, 0, 0, 16)
 		gui.title_text.TextXAlignment = Enum.TextXAlignment.Left
-		gui.title_text.Position = UDim2.new(0, 0, 0.02, 0)
+		gui.title_text.Position = UDim2.new(0.05, 0, 0.02, 0)
 		gui.title_text.BackgroundTransparency = 1
 		gui.title_text.TextColor3 = Color3.new(1, 1, 1)
 		gui.title_text.TextStrokeTransparency = 0
