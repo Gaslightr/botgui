@@ -161,7 +161,7 @@ function botgui:create_section(category, section_name)
 		
 		gui.padding_obj = Instance.new("Frame", gui.content)
 		gui.padding_obj.BackgroundTransparency = 1
-		gui.padding_obj.Size = UDim2.new(1, 0, 0.03, 0)
+		gui.padding_obj.Size = UDim2.new(1, 0, 0.01, 0)
 		
 		return gui
 		
