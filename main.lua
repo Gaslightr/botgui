@@ -14,10 +14,12 @@ uis.InputBegan:Connect(function(_)
 		if botgui.toggle_win.Visible then
 				
 			uis.ModalEnabled = true
+			uis.MouseIconEnabled = true
 				
 		else
 				
-			uis.ModalEnabled = true
+			uis.ModalEnabled = false
+			uis.MouseIconEnabled = false
 				
 		end
 		
