@@ -64,6 +64,7 @@ function botgui:create_window(parent, title)
 		gui.title_bar.Size = UDim2.new(0.400, 0, 0.570, 0)
 		gui.title_bar.AnchorPoint = Vector2.new(0.5, 0.5)
 		gui.title_bar.Position = UDim2.new(0.5, 0, 0.5, 0)
+		gui.title_bar.Visible = false
 		
 		gui.title_text = Instance.new("TextLabel", gui.title_bar)
 		gui.title_text.Size = UDim2.new(0.1, 0, 0, 16)
