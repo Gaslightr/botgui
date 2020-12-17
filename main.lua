@@ -4,6 +4,7 @@ local mouse = game.Players.LocalPlayer:GetMouse()
 
 botgui.toggle_key = Enum.KeyCode.F7
 botgui.toggle_win = nil
+botgui.is_visible = false
 
 uis.InputBegan:Connect(function(_)
 	
@@ -15,11 +16,13 @@ uis.InputBegan:Connect(function(_)
 				
 			uis.ModalEnabled = true
 			uis.MouseIconEnabled = true
+			botgui.is_visible = true
 				
 		else
 				
 			uis.ModalEnabled = false
 			uis.MouseIconEnabled = false
+			botgui.is_visible = false
 				
 		end
 		
