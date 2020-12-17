@@ -40,12 +40,7 @@ function botgui:create_window(parent, title)
 		
 		local gui = {}
 		
-		gui.modal_object = Instance.new("TextButton", parent)
-		gui.modal_object.Size = UDim2.new(1, 0, 1, 0)
-		gui.modal_object.BackgroundTransparency = 1 
-		gui.modal_object.Modal = true
-		
-		gui.title_bar = Instance.new("Frame", modal_object)
+		gui.title_bar = Instance.new("Frame", parent)
 		gui.title_bar.Active = true
 		gui.title_bar.Draggable = true
 		gui.title_bar.BackgroundColor3 = Color3.fromRGB(148, 52, 189)
