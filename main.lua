@@ -10,6 +10,17 @@ uis.InputBegan:Connect(function(_)
 	if _.KeyCode == botgui.toggle_key and botgui.toggle_win ~= nil then
 		
 		botgui.toggle_win.Visible = not botgui.toggle_win.Visible
+			
+		if botgui.toggle_win.Visible then
+				
+			uis.ModalEnabled = true
+				
+		else
+				
+			uis.ModalEnabled = true
+				
+		end
+		
 		
 	end
 	
