@@ -367,8 +367,6 @@ function botgui:create_slider(parent, name, amount, lower_limit, upper_limit)
 					
 				end
 				
-				print(relpos)
-				
 			end
 			
 		end)
